@@ -1,0 +1,48 @@
+nav {
+    color: white;
+    margin-top: 38px;
+}
+
+.container__navigation {
+    max-width: 1760px;
+    margin: 0 auto;
+    display: flex;
+    
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.links__wrapper {
+    display: flex;
+    margin-left: auto;
+    margin-right: 270px;
+    
+}
+.navigation__link {
+    margin-left: 56px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .1s linear;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navigation__link:hover {
+    color: #C89AFC; 
+}
+
+.navigation__link:first-child {
+    margin-left: 0px;
+}
+
+.btn__login__text {
+    padding: 10px 30px;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50px;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+
+.btn__login__text:hover{
+    transform: scale(1.1);
+}

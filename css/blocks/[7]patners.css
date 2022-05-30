@@ -1,0 +1,46 @@
+.partners__wrapper{
+    margin-bottom: 198.35px;
+}
+
+
+.partners__header {
+    margin-bottom: 89px;
+}
+.partners__header__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.4;
+    display: flex;
+}
+
+.partners__header__title::before{
+    content: "";
+    display: block;
+    height: 45.15px;
+    width: 90.3px;
+    transform: rotate(-135deg) translateY(-125%);
+
+    background-image: url(../../img/elipse.png);
+    margin-right: 20px;
+}
+
+.partners__table__wrapper { 
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-around;
+    grid-gap: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.image__partners {
+    padding: 29px 66px;
+    background-image: url(../../img/main__bg.jpg);
+    background-position: center;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+
+.image__partners:hover{
+    transform: scale(1.05);
+    background-image: none; 
+}

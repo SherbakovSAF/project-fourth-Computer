@@ -1,0 +1,83 @@
+.student__complete__wrapper {
+    margin-bottom: 200px;
+}
+
+.student__heading__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.4;
+    display: flex;
+    margin-bottom: 49px;
+}
+
+.student__heading__title::before{
+    content: "";
+    display: block;
+    height: 45.15px;
+    width: 90.3px;
+    transform: rotate(-45deg);
+
+    background-image: url(../../img/elipse.png);
+    margin-right: 20px;
+}
+
+.student__heading__subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.5;
+
+    max-width: 411px;
+
+    margin-bottom: 80px;
+}
+
+.student__percent__title {
+    display: flex;
+}
+
+.student__percent__number {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.4;
+}
+
+[data-number]::after {
+    content: "";
+    display: flex;
+    width: 324px;
+    height: 80px;
+    
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}
+
+[data-number="2"]::after {
+    height: 60px;
+    transform: translateY(10px);
+} 
+
+[data-number="3"]::after {
+    height: 30px;
+    transform: translateY(25px);
+}
+
+[data-number="4"]::after {
+    height: 10px;
+    transform: translateY(35px);
+}
+
+.student__percent__subtitle {
+    display: flex;
+    margin-top: 35px;
+}
+
+.student__percent__text {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.5;
+    max-width: 306px;
+    margin-left: 18px;
+}
+
+.student__percent__text:first-child{
+    margin-left: 0px;
+}
