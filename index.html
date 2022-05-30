@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compucter</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- Block -->
+    <link rel="stylesheet" href="./css/[0]main.css">
+    <link rel="stylesheet" href="./css/blocks/[1]navigation.css">
+    <link rel="stylesheet" href="./css/blocks/[1.1]modallogin.css">
+    <link rel="stylesheet" href="./css/blocks/[2]header.css">
+    <link rel="stylesheet" href="./css/blocks/[3]statsInfo.css">
+    <link rel="stylesheet" href="./css/blocks/[4]companyInfo.css">
+    <link rel="stylesheet" href="./css/blocks/[5]studentComlete.css">
+    <link rel="stylesheet" href="./css/blocks/[6]advantage.css">
+    <link rel="stylesheet" href="./css/blocks/[7]patners.css">
+    <link rel="stylesheet" href="./css/blocks/[8]programm.css">
+    <link rel="stylesheet" href="./css/blocks/[9]teachers.css">
+    <link rel="stylesheet" href="./css/blocks/[10]footer.css">
+</head>
+
+<body>
+    <div class="modal__window__login hidden">
+        <div class="modal__shell">
+            <div class="modal__content__container">
+                <div class="select__login  ">
+                    <p class="select__login__title login">Вход в личный кабинет</p>
+                    <p class="select__login__title register">Регистрация</p>
+                </div>
+                <div class="select__type__wrapper login__window">
+                    <div class="input__select">
+                        <input type="text" class="input__login" placeholder="Введите логин">
+                        <input type="text" class="password" placeholder="Введите пароль">
+                    </div>
+                    <div class="modal__window__password">
+                        <div class="save__password">
+                            <label class="save__password__wrapper">
+                                <input type="checkbox" class="save__password__input">
+                                <span class="custom__checkbox"></span>
+                                Сохранить пароль
+                            </label>
+                        </div>
+                        <div class="remember__password">
+                            <a href="" class="remember__password__link">
+                                <p class="remember__password__text">Забыли свой пароль?</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal__window__success">
+                        <button class="entrance__btn">Войти</button>
+                        <p class="caution">* Все поля обязательны для заполнения</p>
+                    </div>
+                    <div class="login__networks">
+                        <div class="login__networks__text">
+                            <p class="network__text">Вход через социальные сети</p>
+                        </div>
+                        <div class="model__networks__wrapper">
+                            <a href="#" class="networks__link"><img src="./img/iconNetworks/vk.svg" alt="vk" class="networks__icon"></a>
+                            <a href="#" class="networks__link"><img src="./img/iconNetworks/facebook.svg" alt="fb" class="networks__icon"></a>
+                         </div>
+                    </div>
+                </div>
+                <div class="select__type__wrapper reg__window hidden">
+                    <div class="input__select">
+                        <input type="text" class="input__login" placeholder="Введите почту">
+                        <input type="text" class="password" placeholder="Придумайте пароль">
+                        <input type="text" class="input__login" placeholder="Повторите пароль">
+                        <input type="tel" class="password" placeholder="Введите телефон">
+                    </div>
+                    <div class="modal__window__password">
+                        <div class="save__password">
+                            <label class="save__password__wrapper">
+                                <input type="checkbox" class="save__password__input">
+                                <span class="custom__checkbox"></span>
+                                <p class="checkbox__text">Я согласен на <span class="text__decoration">обработку персональных данных</span</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal__window__success">
+                        <button class="entrance__btn">Войти</button>
+                        <p class="caution">* Все поля обязательны для заполнения</p>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <nav>
+        <div class="container__navigation">
+            <div  class="logo">
+                <img src="./img/logo.svg" alt="logo">
+            </div>
+            <div class="links__wrapper">
+                <a href="#" class="navigation__link">Главная</a>
+                <a href="#" class="navigation__link">Курсы</a>
+                <a href="#" class="navigation__link">Расписание</a>
+                <a href="#" class="navigation__link">Преподаватели</a>
+                <a href="#" class="navigation__link">Рассылка</a>
+                <a href="#" class="navigation__link">Контакты</a>
+            </div>
+            <div class="btn__login">
+                <button type="button" class="btn__login__text">Зайти в кабинет</button>
+            </div>
+        </div>
+       
+    </nav>
+    <main>
+        <article class="firstList ">
+            <div class="main__container">
+                <div class="header__title__wrapper">
+                    <p class="header__title">Первый курс<br> по компьютерной сборке</p>
+                </div>
+                <div class="header__counting__wrapper">
+                    <div class="unitTime__wrapper">
+                        <p class="number" id="days">18</p>
+                        <p class="meaning">Дней</P>
+                    </div>
+                    <div class="unitTime__wrapper">
+                        <p class="number" id="hours">18</p>
+                        <p class="meaning">Часов</P>
+                    </div>
+                    <div class="unitTime__wrapper">
+                        <p class="number" id="minuts">18</p>
+                        <p class="meaning">Минут</P>
+                    </div>
+                    <div class="unitTime__wrapper">
+                        <p class="number" id="seconds">18</p>
+                        <p class="meaning">Секунд</P>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="stats__info ">
+            <div class="main__container">
+                <div class="stats__info__wrapper">
+                    <div class="stats__info__btn">
+                        <button class="order">Заказать курс</button>
+                    </div>
+                    <div class="stats__student">
+                        <div class="all__student">
+                            <p class="stats__title">Учеников всего:</p>
+                            <p class="stats__number">200</p>
+                        </div>
+                        <div class="all__student__complete">
+                            <p class="stats__title">Успешно закончили курс:</p>
+                            <p class="stats__number">190 </p>
+                        </div>
+                    </div>
+                    <div class="stats__money">
+                        <div class="earn__money">
+                            <p class="stats__title">Заработано учениками:</p>
+                            <p class="stats__number">400 000₽</p>
+                        </div>
+                        <div class="stats__money__total">
+                            <p class="stats__title">0</p>
+                            <p class="stats__title">1 000 000₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <section class="main__article">
+            <article class="company__info ">
+                <div class="main__container">
+                    <div class="company__info__wrapper">
+                        <div class="image__info">
+                            <img src="./img/computer__border.png" alt="Compucter" class="image__computer">
+                        </div>
+                        <div class="image__text">
+                            <div class="image__text__title">Чем мы занимаемся?</div>
+                            <div class="image__text__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue in suspendisse egestas. Dictum vestibulum mi et sed nunc, orci fermentum vestibulum, morbi. Et neque, adipiscing sapien sem senectus praesent aenean consequat. Aenean facilisi turpis aliquet fringilla. Nunc sem felis sed interdum feugiat mattis elit, sollicitudin. Quam pharetra rhoncus risus, cursus id elementum aliquet. Nullam turpis arcu malesuada arcu interdum placerat nisi, lobortis. </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="student__complete ">
+                <div class="main__container">
+                    <div class="student__complete__wrapper">
+                        <div class="student__heading__wrapper">
+                            <p class="student__heading__title">Быстрый старт</p>
+                            <p class="student__heading__subtitle">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
+                        </div>
+                        <div class="student__percent__wrapper">
+                            <div class="student__percent__title">
+                                <p class="student__percent__number"      data-number="1">100%</p>
+                                <p class="student__percent__number"      data-number="2">75%</p>
+                                <p class="student__percent__number"      data-number="3">50%</p>
+                                <p class="student__percent__number"      data-number="4">Итог</p>
+                            </div>
+                            <div class="student__percent__subtitle">
+                                <p class="student__percent__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                                <p class="student__percent__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                                <p class="student__percent__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                                <p class="student__percent__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="advantage ">
+                <div class="main__container">
+                    <div class="advantage__wrapper">
+                        <div class="advantage__title">
+                            <p>Получите профессию прямо сейчас</p>
+                        </div>
+                        <div class="advantage__blocks__wrapper">
+                            <div class="block__wrapper" >
+                                <div class="advantage__block__title" data-advantage-block="1">Только практические навыки в работе</div>
+                                <div class="advantage__block__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+                            </div>
+                            <div class="block__wrapper" >
+                                <div class="advantage__block__title" data-advantage-block="2">Работа на самом современном оборудовании</div>
+                                <div class="advantage__block__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit,volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+                            </div>
+                            <div class="block__wrapper">
+                                <div class="advantage__block__title" data-advantage-block="3">Сертификация по окончании обучения</div>
+                                <div class="advantage__block__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="partners">
+                <div class="main__container">
+                    <div class="partners__wrapper">
+                        <div class="partners__header">
+                            <p class="partners__header__title">Партнеры - топовые бренды</p>
+                        </div>
+                        <div class="partners__table__wrapper">
+                            <img src="./img/msilogo.svg" alt="msi" class="image__partners">
+                            <img src="./img/msilogo.svg" alt="msi" class="image__partners">
+                            <img src="./img/msilogo.svg" alt="msi" class="image__partners">
+                            <img src="./img/msilogo.svg" alt="msi" class="image__partners">
+                            <img src="./img/msilogo.svg" alt="msi" class="image__partners">
+                            <img src="./img/msilogo.svg" alt="msi" class="image__partners">
+                            <img src="./img/msilogo.svg" alt="msi" class="image__partners">
+                            <img src="./img/msilogo.svg" alt="msi" class="image__partners">
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="programm">
+                <div class="programm__container">
+                    <div class="programm__header">
+                        <div class="programm__header__title">Программа обучения</div>
+                        <div class="programm__header__subtitle">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</div>
+                    </div>
+                    <div class="programm__progress__bar">
+                        <div class="progress__bar__wrapper" data-programm-number="1">
+                            <div class="progress__bar__title  programm__left">Неделя №1</div>
+                            <div class="progress__bar__subtitle   programm__left" data-programm-left="1">Красивая часть курса, которая помогает в успехе</div>
+                        </div>
+                        <div class="progress__bar__wrapper" data-programm-number="2">
+                            <div class="progress__bar__title  programm__right">Неделя №2</div>
+                            <div class="progress__bar__subtitle  programm__right" data-programm-right="2">Красивая часть курса, которая помогает в успехе</div>
+                        </div>
+                        <div class="progress__bar__wrapper" data-programm-number="3">
+                            <div class="progress__bar__title  programm__left">Неделя №3</div>
+                            <div class="progress__bar__subtitle  programm__left" data-programm-left="3">Красивая часть курса, которая помогает в успехе</div>
+                        </div>
+                        <div class="progress__bar__wrapper" data-programm-number="4">
+                            <div class="progress__bar__title  programm__right">Неделя №4</div>
+                            <div class="progress__bar__subtitle  programm__right" data-programm-right="4">Красивая часть курса, которая помогает в успехе</div>
+                        </div>
+                        <div class="progress__bar__wrapper" data-programm-number="5">
+                            <div class="progress__bar__title  programm__left">Неделя №5</div>
+                            <div class="progress__bar__subtitle  programm__left" data-programm-left="5">Красивая часть курса, которая помогает в успехе</div>
+                        </div>
+                        <div class="progress__bar__wrapper " data-programm-number="6">
+                            <div class="progress__bar__title  programm__right">Неделя №6</div>
+                            <div class="progress__bar__subtitle  programm__right" data-programm-right="6">Красивая часть курса, которая помогает в успехе</div>
+                        </div> 
+                        <div class="progress__bar__wrapper" data-programm-number="7">
+                            <div class="progress__bar__title  programm__left">Неделя №7</div>
+                            <div class="progress__bar__subtitle  programm__left" data-programm-left="7">Красивая часть курса, которая помогает в успехе</div>
+                        </div> 
+                    </div>
+                </div>
+            </article>
+            <article class="teachers">
+                <div class="main__container">
+                    <div class="teachers__header">
+                        <p class="teachers__header__title">Ваши преподаватели</p>
+                    </div>
+                    <div class="teachers__card__wrapper">
+                        <div class="card__wrapper">
+                            <img src="./img/photo/photo1.png" alt="photo1" class="teachers__image">
+                            <p class="teachers__title">Дмитрий Иванов</p>
+                            <p class="teachers__subtitle">Специалист по видеокартам</p>
+                            <a href="#" class="teachers__btn">Биография</a>
+                        </div>
+                        <div class="card__wrapper">
+                            <img src="./img/photo/photo2.png" alt="photo1" class="teachers__image">
+                            <p class="teachers__title">Дмитрий Иванов</p>
+                            <p class="teachers__subtitle">Специалист по видеокартам</p>
+                            <a href="#" class="teachers__btn">Биография</a>
+                        </div>
+                        <div class="card__wrapper">
+                            <img src="./img/photo/photo3.png" alt="photo1" class="teachers__image">
+                            <p class="teachers__title">Дмитрий Иванов</p>
+                            <p class="teachers__subtitle">Специалист по видеокартам</p>
+                            <a href="#" class="teachers__btn">Биография</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="footer">
+                <div class="main__container">
+                    <div class="footer__wrappeer">
+                        <div class="footer__header">
+                            <p class="footer__header__title">Статьи каждую неделю</p>
+                            <p class="footer__header__subtitle">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
+                        </div>
+                        <div class="footer__mail">
+                            <input type="text" placeholder="E-mail"  class="footer__input">
+                            <button type="button" class="footer__btn">Подписаться</button>
+                        </div>
+                        <div class="footer__networks__wrapper">
+                           <a href="#" class="networks__link"><img src="./img/iconNetworks/vk.svg" alt="vk" class="networks__icon"></a>
+                            <a href="#" class="networks__link"><img src="./img/iconNetworks/youtube.svg" alt="youtube" class="networks__icon"></a>
+                            <a href="#" class="networks__link"><img src="./img/iconNetworks/facebook.svg" alt="fb" class="networks__icon"></a>
+                            <a href="#" class="networks__link"><img src="./img/iconNetworks/inst.svg" alt="inst" class="networks__icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script src="./js/style.js"></script>
+    <script src="./js/time.js"></script>
+</body>
+</html>
