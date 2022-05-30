@@ -1,0 +1,43 @@
+.main__article{
+    background-image: url(../../img/main__bg.jpg);
+}
+
+.company__info__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    padding: 200px 0px;
+}
+
+.image__info{
+    position: relative;
+}
+
+
+.image__info::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../../img/compucter.png);
+    width: 446px;
+    height: 446px;
+    top: 96px;
+    left: 46px;
+    
+}
+
+.image__text {
+    max-width: 636px;
+}
+
+.image__text__title {
+font-weight: 700;
+font-size: 48px;
+line-height: 1.4;
+margin-bottom: 45px;
+}
+
+.image__text__subtitle {
+
+    line-height: 1.6;
+}

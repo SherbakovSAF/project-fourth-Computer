@@ -1,0 +1,128 @@
+.programm {
+    margin-bottom: 171.2px;
+}
+.programm__container {
+    max-width: 596px;
+    margin: 0 auto;
+}
+
+.programm__header__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.programm__header__title::before{
+    content: "";
+    margin-bottom: 76.35px;
+    display: block;
+    background-image: url(../../img/elipse.png);
+    width: 90.3px;
+    height: 44.15px;
+    transform: rotate(180deg);
+
+}
+
+.programm__header__subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    opacity: 0.5;
+    max-width: 411px;
+    margin: 0 auto;
+
+    
+}
+.programm__progress__bar {
+    margin-top: 90px;
+    position: relative;
+}
+
+.programm__progress__bar::after {
+    content: "";
+    display: block;
+    
+    bottom: 0;
+    width: 6px;
+    height: 677px;
+    position: absolute;
+    left: calc(50% - 3px);
+    margin-top: 80px;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    opacity: 1;
+}
+
+.progress__bar__wrapper {
+    max-width: 228px;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.progress__bar__wrapper:hover{
+    transform: scale(1.03);
+}
+
+.progress__bar__title {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.5;
+    display: block;
+    margin-left: auto;
+    margin-bottom: 15px;
+}
+.progress__bar__subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #FFFFFF;
+
+}
+
+.programm__left{
+    text-align: right;
+    position: relative;
+}
+
+
+
+[data-programm-left]::after{
+    content: "";
+    top: 20%;
+    left: calc(100% + 27px);
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    opacity: 0. 3;
+}
+
+.programm__right{
+    text-align: left;
+    position: relative;
+}
+
+[data-programm-right]::after{
+    content: "";
+    top: 20%;
+    right: calc(100% + 27px);
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    opacity: 0. 3;
+}
+
+[data-programm-number]:nth-child(odd){
+    margin-right: auto;
+}
+
+[data-programm-number]:nth-child(even){
+    margin-left: auto;
+}
+
