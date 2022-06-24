@@ -1,4 +1,4 @@
-const nextYear = new Date('April 30 2022 00:00:00');
+const nextYear = new Date('April 30 2050 00:00:00');
 const days = document.querySelector('#days');
 const hours = document.querySelector('#hours');
 const minuts = document.querySelector('#minuts');

@@ -14,6 +14,7 @@ btnLogin.addEventListener('click', function(){
 
 windowReg.addEventListener('click', function(){
     windowReg.classList.add('hidden')
+    body.classList.remove('no__scroll')
 });
 
 windowReg.querySelector('.modal__content__container').addEventListener('click', function(e) {
